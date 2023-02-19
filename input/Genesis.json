@@ -1,0 +1,11 @@
+{
+  "number": "21f17d4d4b01f2e2e22bf87b29d1d25c7033e3c9c3a2a2d7e8b48a08de48e207",
+  "input": [],
+  "output": [
+    {
+      "value": 1000,
+      "pubkey": "2b2080e3191a07a8d107db1c3e9f9c1442d2c913680e0f69a18c48dd36157e44"
+    }
+  ],
+  "sig": ""
+}
