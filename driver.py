@@ -6,6 +6,14 @@ with open('./input/Genesis.json', 'r') as f:
     for i in range(n):
         mem_pool[i].put(tx)
 
+num = 0
+with open('./input/Transaction.json', 'r') as f:
+    txs = json.load(f)
+    for i in range(len(txs)):
+        txs[i] = Transaction(tx['input'], tx['output'], private_key = keypairs[i]['prikey'])
+        for i in range(n):
+            mem_pool[i].put(tx)
+
 n0 = Mining_Node(0, keypairs[0])
 n1 = Mining_Node(1, keypairs[1])
 n2 = Mining_Node(2, keypairs[2])
